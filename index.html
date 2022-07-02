@@ -6,16 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meme Generator</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Rubik:wght@800&display=swap');
+  </style>
 </head>
 <body>
   <div class="meme-generator">
+    <h1>MAKE-A-MEME</h1>
+  <form>
     <label>Image URL</label>
-    <input type="file" id="imageFileInput">
+    <input type="url" placeholder="What is the URL for your meme image?" id="imageFileInput" required>
+    <br>
     <label>Top text</label>
-    <input type="text" name="" id="topTextInput">
+    <input type="text" placeholder="(Optional) What text do you want at the top of the meme?" id="topTextInput">
+    <br>
     <label>Bottom text </label>
-    <input type="text" name="" id="bottomTextInput">
-
+    <input type="text" placeholder="(Optional) What text do you want at the bottom of the meme?" id="bottomTextInput">
+    <br>
+    <input type="submit" value="ADD MEME">
+  </form>
     <canvas id="meme"></canvas>
 
   </div>
