@@ -30,6 +30,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    height: 446px;
     left:0;
     right:0;
     top: 0;
@@ -38,7 +39,7 @@ h1 {
 form {
     padding-left: 20px;
     position: relative;
-    width: 772px;
+    width: 780px;
     text-align: left;
     position:relative;
     display: block;
@@ -64,7 +65,7 @@ input {
     height: 26px;
     left: 531px;
     top: 207px;
-    padding: 12px;
+    padding: 5px;
     margin-top: 15px;
     box-sizing: border-box;
     display: inline-block;
@@ -101,10 +102,51 @@ input[type=button], input[type=submit], input[type=reset] {
     border-radius: 4px;
     margin-left: 20%;
 
-  }
+}
 
-  input[type=submit]:hover{
+input[type=submit]:hover{
     background-color : #413F42;
     transition: all .5s ease;
+}
 
-  }
+
+#memes {
+    width:100%;
+    padding-top: 80px;
+    position: relative;
+    justify-content: left;
+}
+
+#imgdiv {
+    margin: 20px;
+    display: inline-block;
+}
+
+#imgdiv:hover .shadow{
+    display: none;
+}
+
+#icon {
+    max-width: 300px;
+    min-width: none;
+    height: auto;
+}
+
+#textTop {
+    color: white;
+    text-shadow: black 0px 0px 2px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+}
+
+#textBot {
+    color: white;
+    text-shadow: black 0px 0px 2px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+

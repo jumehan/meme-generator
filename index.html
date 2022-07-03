@@ -13,21 +13,18 @@
 <body>
   <div class="meme-generator">
     <h1>MAKE-A-MEME</h1>
-  <form>
+  <form onsubmit="return false">
     <label>Image URL</label>
-    <input type="url" placeholder="What is the URL for your meme image?" id="imageFileInput" required>
-    <br>
+    <input type="url" placeholder="What is the URL for your meme image?" id="imgUrlInput" required>
     <label>Top text</label>
     <input type="text" placeholder="(Optional) What text do you want at the top of the meme?" id="topTextInput">
-    <br>
-    <label>Bottom text </label>
+    <label>Bottom text</label>
     <input type="text" placeholder="(Optional) What text do you want at the bottom of the meme?" id="bottomTextInput">
-    <br>
-    <input type="submit" value="ADD MEME">
+    <input type="submit" value="ADD MEME" id="button">
   </form>
-    <canvas id="meme"></canvas>
-
+    <div id="memes"></div>
   </div>
+
 <script src="main.js"></script>
 </body>
 </html>
