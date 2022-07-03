@@ -124,8 +124,10 @@ button:hover{
 
 #imgdiv {
     margin: 20px;
+    position: relative;
     display: inline-block;
 }
+
 
 #icon {
     max-width: 300px;
@@ -151,15 +153,12 @@ button:hover{
     right: 15px;
 }
 
-.overlay {
+#deleteMsg {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+    bottom: 50%;
+    background-color:rgba(0, 0, 0, 0.5);
+
+    color: #FFFFFF;
+    text-align: center;
     width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
+}
