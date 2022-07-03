@@ -13,16 +13,19 @@
 <body>
   <div class="meme-generator">
     <h1>MAKE-A-MEME</h1>
-  <form onsubmit="return false">
+  <form id="memeForm">
     <label>Image URL</label>
     <input type="url" placeholder="What is the URL for your meme image?" id="imgUrlInput" required>
     <label>Top text</label>
     <input type="text" placeholder="(Optional) What text do you want at the top of the meme?" id="topTextInput">
     <label>Bottom text</label>
     <input type="text" placeholder="(Optional) What text do you want at the bottom of the meme?" id="bottomTextInput">
-    <input type="submit" value="ADD MEME" id="button">
+    <button type="submit" value="ADD MEME" id="button">ADD MEME</button>
   </form>
-    <div id="memes"></div>
+    <div id="memes">
+      <div class="overlay">
+        <div class="text">Delete</div>
+    </div>
   </div>
 
 <script src="main.js"></script>

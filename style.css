@@ -84,13 +84,14 @@ input {
     color: #C4C0C4;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+button, input[type=button], input[type=submit], input[type=reset] {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     width: 180px;
     height: 54px;
     text-align: center;
+    border: 0;
 
     background: #E47969;
 
@@ -109,6 +110,10 @@ input[type=submit]:hover{
     transition: all .5s ease;
 }
 
+button:hover{
+    background-color : #413F42;
+    transition: all .5s ease;
+}
 
 #memes {
     width:100%;
@@ -120,10 +125,6 @@ input[type=submit]:hover{
 #imgdiv {
     margin: 20px;
     display: inline-block;
-}
-
-#imgdiv:hover .shadow{
-    display: none;
 }
 
 #icon {
@@ -150,3 +151,15 @@ input[type=submit]:hover{
     right: 15px;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }

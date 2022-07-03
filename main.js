@@ -1,9 +1,5 @@
-
-var topTextInput = document.getElementById("topTextInput");
-var bottomTextInput = document.getElementById("bottomTextInput");
-var canvas = document.querySelector("#meme");
 const button = document.getElementById("button");
-
+const form = document.getElementById("memeForm");
 
 button.addEventListener("click", () => {
   var imageurl = document.getElementById("imgUrlInput").value;
@@ -32,13 +28,27 @@ button.addEventListener("click", () => {
 
   var block = document.getElementById("memes");
   block.appendChild(CountDiv);
+
+  block.addEventListener('click', function handleClick(event) {
+    console.log(event.target);
+    event.target.parentNode.remove();
+
+  });
 });
 
-document.getElementsByTagName("imgdiv").addEventListener("mouseover", mouseOver);
+form.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+  form.reset();
+});
 
-function mouseOver() {
-document.getElementsByTagName("imgdiv").remove;
-}
+/*
+let meme = document.getElementById("memes")
+
+meme.addEventListener('click', function handleClick(event) {
+  console.log(event.target);
+
+  event.target.remove();
+});
 
 /*let image;
 
